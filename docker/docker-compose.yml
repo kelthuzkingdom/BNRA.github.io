@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    container_name: bnra-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../api:/app/api
+      - ../core:/app/core
+    restart: unless-stopped
+  
+  dashboard:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.dashboard
+    container_name: bnra-dashboard
+    ports:
+      - "8050:8050"
+    volumes:
+      - ../dashboard:/app/dashboard
+    restart: unless-stopped
