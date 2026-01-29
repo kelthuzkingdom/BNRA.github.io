@@ -43,7 +43,7 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Data
+# Data directories (should be created locally, not tracked)
 data/
 models/
 logs/
@@ -59,3 +59,23 @@ config/secrets/
 *.pid
 *.seed
 *.pid.lock
+
+# Temporary files
+*.tmp
+*.temp
+
+# Large files
+*.pcap
+*.pcapng
+
+# Training data
+*.csv
+*.json
+*.parquet
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test coverage
+.coverage
+htmlcov/
