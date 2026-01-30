@@ -218,7 +218,7 @@ http {
 }''',
 
     # ============ README ============
-    "README.md": '''# BNRA - Border Network Response & Analysis System
+    "README.md": '''
 
 A comprehensive cybersecurity monitoring platform for network threat detection and social media intelligence.
 
